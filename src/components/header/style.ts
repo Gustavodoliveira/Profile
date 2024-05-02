@@ -1,4 +1,4 @@
-'use client';
+
 
 import styled from 'styled-components';
 
@@ -13,7 +13,7 @@ export const HeaderContainer = styled.header`
   .Arrow-on-bottom{
     font-size: 4rem;
     position: absolute;
-    left: 50%;
+    left:48%;
     top: 80%;
     animation-name: in-bottom;
     animation-duration: 5s;

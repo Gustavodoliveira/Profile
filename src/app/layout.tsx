@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import { GlobalStyled } from './globalStyle';
 import ThemeClient from './Theme';
+import StyledComponentsRegistry from './registry';
 
 const inter = Montserrat({
   subsets: ['latin'],
@@ -23,12 +24,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <GlobalStyled />
-        <ThemeClient>
-          <Header />
-          {children}
-          <Footer />
-        </ThemeClient>
+        <StyledComponentsRegistry>
+          <GlobalStyled />
+          <ThemeClient>
+            <Header />
+            {children}
+            <Footer />
+          </ThemeClient>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
