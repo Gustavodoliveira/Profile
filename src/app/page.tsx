@@ -1,6 +1,12 @@
 'use client';
 
-import { HardSkillContainer, Icons, MainContainer } from './styled';
+import Card from '@/components/Card/Card';
+import {
+  CardSection,
+  HardSkillContainer,
+  IconsSection,
+  MainContainer,
+} from './styled';
 import Icon from '@/components/Icon/Icon';
 import {
   SiMongodb,
@@ -18,7 +24,7 @@ export default function Page() {
     <MainContainer>
       <HardSkillContainer>
         <h2>Hard Skills</h2>
-        <Icons>
+        <IconsSection>
           <Icon icon={SiReact} title="React" Class="react" />
           <Icon icon={SiRedux} title="Redux" Class="redux" />
           <Icon icon={SiMongodb} title="MongoDb" Class="mongoDb" />
@@ -31,8 +37,11 @@ export default function Page() {
             title="Styled Components"
             Class="styled-Components"
           />
-        </Icons>
+        </IconsSection>
       </HardSkillContainer>
+      <CardSection>
+        <Card />
+      </CardSection>
     </MainContainer>
   );
 }

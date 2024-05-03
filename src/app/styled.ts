@@ -18,7 +18,7 @@ export const HardSkillContainer = styled.section`
 
 `;
 
-export const Icons = styled.section`
+export const IconsSection = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,5 +119,9 @@ export const Icons = styled.section`
       top: 30%;
     }
   }
+`;
+
+export const CardSection = styled.section`
+
 `;
 
