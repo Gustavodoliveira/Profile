@@ -14,7 +14,6 @@ const Icon = (props: IconProps) => {
   return (
     <IconContainer>
       <props.icon
-        size={30}
         className={props.Class ? props.Class : ''}
         title={props.title}
       />

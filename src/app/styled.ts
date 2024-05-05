@@ -7,7 +7,8 @@ export const MainContainer = styled.main`
 `;
 
 export const HardSkillContainer = styled.section`
-  margin: 4rem auto;
+height: 200px;
+  margin: 8rem auto;
 
   h2{
     font-size: 2.6rem;
@@ -19,20 +20,41 @@ export const HardSkillContainer = styled.section`
 `;
 
 export const IconsSection = styled.section`
-  display: flex;
+ display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 7rem;
   gap: 7rem;
   position: relative;
 
+  @media (max-width: 800px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    font-size: .5rem;
+     
+
+  }
+
+  
+  
   .react{
     color: ${({theme}) => theme.Colors.blue};
-    animation-name: toTheTop;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+   
     position: absolute;
     top: -30%;
+
+    @media (min-width: 800px) {
+      display: block;
+      animation-name: toTheTop;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+
+    @media (max-width: 800px) {
+      position: relative;
+      top: 10%;
+    }
 
   }
 
@@ -40,62 +62,121 @@ export const IconsSection = styled.section`
     color: ${({theme}) => theme.Colors.quaternary} ;
     position: absolute;
     top:30%;
-    animation-name: toTheBottom;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+
+    @media (min-width: 800px) {
+      animation-name: toTheBottom;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+    @media (max-width: 800px) {
+      position: relative;
+      top: 10%;
+    }
   }
 
   .mongoDb{
     color: ${({theme}) => theme.Colors.quinary};
     position: absolute;
-    animation-name: toTheTop;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
     top: -30%;
+
+    @media (min-width: 800px) {
+      animation-name: toTheTop;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+    @media (max-width: 800px) {
+      top: 10%;
+      position: relative;
+
+    }
   }
 
   .mySql{
     color: ${({theme}) => theme.Colors.orange};
     position: absolute;
     top: 30%;
-    animation-name: toTheBottom;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+
+    @media (min-width: 800px) {
+      animation-name: toTheBottom;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+    @media (max-width: 800px) {
+      top: 10%;
+      position: relative;
+
+    }
   }
 
   .node{
     color: ${({theme}) => theme.Colors.quinary};
     position: absolute;
     top: -30%;
-    animation-name: toTheTop;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+
+    @media (min-width: 800px) {
+      animation-name: toTheTop;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+
+    @media (max-width: 800px) {
+      top: 10%;
+      position: relative;
+
+    }
   }
 
   .next{
     color: ${({theme}) => theme.Colors.white};
     position: absolute;
     top: 30%;
-    animation-name: toTheBottom;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+
+    @media (min-width: 800px) {
+      animation-name: toTheBottom;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+
+    @media (max-width: 800px) {
+      top: 10%;
+      position: relative;
+
+    }
+
   }
 
   .sass{
     color: #FA07D8;
     position: absolute;
     top: -30%;
-    animation-name: toTheTop;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+
+    @media (min-width: 800px) {
+      animation-name: toTheTop;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+
+    @media (max-width: 800px) {
+      top: 10%;
+      position: relative;
+
+    }
   }
   .styled-Components{
     color: #FAD401;
     position: absolute;
     top: 25%;
-    animation-name: toTheBottom;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+
+    @media (min-width: 800px) {
+      animation-name: toTheBottom;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+    @media (max-width: 800px) {
+      top: 10%;
+      position: relative;
+
+    }
   }
 
 
@@ -122,6 +203,25 @@ export const IconsSection = styled.section`
 `;
 
 export const CardSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  h2 {
+     text-align: center;
+     font-size: 2rem;
+
+  }
+
+  .card_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
 
 `;
+
 

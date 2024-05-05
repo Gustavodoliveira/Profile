@@ -6,6 +6,7 @@ interface buttonProps {
   children: React.ReactNode;
   href: string | undefined;
   className?: string;
+  download?: string;
 }
 
 const Button = (props: buttonProps) => {
@@ -13,6 +14,8 @@ const Button = (props: buttonProps) => {
     <ButtonContainer
       href={props.href}
       className={props.className ? props.className : ''}
+      download={props.download}
+      target="_blank"
     >
       {props.children}
     </ButtonContainer>

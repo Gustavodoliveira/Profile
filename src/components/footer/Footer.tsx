@@ -1,7 +1,18 @@
 import React from 'react';
+import { FooterContainer } from './style';
+import { FaCopyright } from 'react-icons/fa';
 
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <FooterContainer>
+      <h3>
+        Development by Gustavo 2024{' '}
+        <span>
+          <FaCopyright />
+        </span>
+      </h3>
+    </FooterContainer>
+  );
 };
 
 export default Footer;

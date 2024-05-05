@@ -23,7 +23,7 @@ export default function Page() {
   return (
     <MainContainer>
       <HardSkillContainer>
-        <h2>Hard Skills</h2>
+        <h2>Skills</h2>
         <IconsSection>
           <Icon icon={SiReact} title="React" Class="react" />
           <Icon icon={SiRedux} title="Redux" Class="redux" />
@@ -40,7 +40,12 @@ export default function Page() {
         </IconsSection>
       </HardSkillContainer>
       <CardSection>
-        <Card />
+        <h2>Projetos pessoais</h2>
+        <div className="card_content">
+          <Card />
+          <Card />
+          <Card />
+        </div>
       </CardSection>
     </MainContainer>
   );

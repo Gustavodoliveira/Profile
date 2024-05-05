@@ -9,6 +9,14 @@ export const HeaderContainer = styled.header`
   height: 100vh;
   width: 100%;
 
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    flex-wrap: wrap;
+  }
+
 
   .Arrow-on-bottom{
     font-size: 4rem;
@@ -31,6 +39,20 @@ export const HeaderText = styled.div`
     position: absolute;
     top: 25%;
     left: 8%;
+
+    @media (max-width: 800px) {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      position: relative;
+      margin-top: -10rem;
+
+      h1,h2{
+        padding: .4rem;
+        letter-spacing: .1rem;
+      }
+      
+    }
     
     h1,h2{
       font-weight: 200;
@@ -44,59 +66,27 @@ export const HeaderText = styled.div`
     }
 `;
 
-export const NavContainer = styled.nav`
-  display: flex;
-  position: absolute;
-  top: 1rem;
-  right: 8rem;
 
-    ul{
-      display: flex;
-      list-style: none;
-      gap: 2rem;
-
-
-      & > li > a{
-        color: ${({theme}) => theme.Colors.white};
-        position: relative;
-        
-
-      
-       
-
-        &::after{
-          content: '';
-          position: absolute;
-          left: 0;
-          bottom: -.2rem;
-          background-color: ${({theme}) => theme.Colors.tertiary};
-          width: 0%;
-          height: .2rem;
-          
-          
-
-         
-        } 
-        &:hover::after{
-            width: 100%;
-            transition: .5s ease-in;
-          }
-
-        &:hover{
-          color: ${({theme}) => theme.Colors.transparent};
-          transition: .5s ease-in;
-        }  
-      }
-      
-    }
-`;
 
 export const HeaderButtonContainer = styled.div`
   display: flex;
   gap: 2rem;
   position: absolute;
-  top: 50%;
-  left: 10%;
+  top: 60%;
+  left: 8.5%;
+
+  @media (max-width: 800px) {
+    display: flex;
+    align-items: center;
+    margin-top: -20rem;
+    margin-left: -13rem;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 1rem;
+   
+
+    
+  }
 
   .btn-github{
     display: flex;
@@ -109,10 +99,20 @@ export const HeaderButtonContainer = styled.div`
     border: 1px solid #ff69b4;
     font-size: 1.6rem;
 
+    @media (max-width: 800px) {
+      gap: .4rem;
+      padding: .5rem;
+      font-size: 1rem;
+    }
+
 
     .github-icon{
       color: #ff69b4;
       font-size: 2rem;
+
+      @media (max-width: 800px) {
+        font-size: 1rem;
+      }
     }
   }
 
@@ -127,17 +127,52 @@ export const HeaderButtonContainer = styled.div`
     border: 1px solid #258dbf;
     font-size: 1.6rem;
 
+    @media (max-width: 800px) {
+      gap: .4rem;
+      padding: .5rem;
+      font-size: 1rem;
+    }
+
 
     .linkedin-icon{
-      color: #0e76a8
+      color: #0e76a8;
+
+      @media (max-width: 800px) {
+        font-size: 1rem;
+      }
     }
   }
 
+  
 
 `;
 
 export const HeaderImageAndCvContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
   position: absolute;
- top: 20%;
- right: 10%;
+  top: 25%;
+  right: 10%;
+
+  @media (max-width: 800px) {
+    display: flex;
+    margin-top: 28rem;
+    align-items: center;
+    position: relative;
+  }
+ 
+ .btn-cv{
+    top: 10rem;
+    color: ${({theme}) => theme.Colors.quaternary};
+    padding: 1rem;
+    border: 1px solid ${({theme}) => theme.Colors.quaternary};
+
+    @media (max-width: 800px) {
+      gap: .4rem;
+      padding: .5rem;
+      font-size: 1rem;
+    }
+ 
+  }
 `;
