@@ -3,6 +3,7 @@
 import Card from '@/components/Card/Card';
 import {
   CardSection,
+  ContactsSection,
   HardSkillContainer,
   IconsSection,
   MainContainer,
@@ -18,6 +19,10 @@ import {
   SiSass,
   SiStyledcomponents,
 } from 'react-icons/si';
+import { TbBrandReactNative } from 'react-icons/tb';
+import Contacts from '@/components/Contacts/Contacts';
+import { MdEmail } from 'react-icons/md';
+import { FaInstagram, FaTwitter } from 'react-icons/fa6';
 
 export default function Page() {
   return (
@@ -33,6 +38,11 @@ export default function Page() {
           <Icon icon={SiNextdotjs} title="Next" Class="next" />
           <Icon icon={SiSass} title="Sass" Class="sass" />
           <Icon
+            icon={TbBrandReactNative}
+            title="React nativve"
+            Class="react-native"
+          />
+          <Icon
             icon={SiStyledcomponents}
             title="Styled Components"
             Class="styled-Components"
@@ -47,6 +57,26 @@ export default function Page() {
           <Card />
         </div>
       </CardSection>
+      <ContactsSection>
+        <Contacts
+          Icon={MdEmail}
+          href="/"
+          text="gustavod.oliveira@outlook.com"
+          title="E-mail"
+        />
+        <Contacts
+          Icon={FaInstagram}
+          href="/"
+          text="gustavod.oliveira@outlook.com"
+          title="E-mail"
+        />
+        <Contacts
+          Icon={FaTwitter}
+          href="/"
+          text="gustavod.oliveira@outlook.com"
+          title="E-mail"
+        />
+      </ContactsSection>
     </MainContainer>
   );
 }

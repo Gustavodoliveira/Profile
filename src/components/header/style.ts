@@ -157,7 +157,7 @@ export const HeaderImageAndCvContainer = styled.div`
 
   @media (max-width: 800px) {
     display: flex;
-    margin-top: 28rem;
+    margin-top: 34rem;
     align-items: center;
     position: relative;
   }

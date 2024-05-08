@@ -23,7 +23,7 @@ export const IconsSection = styled.section`
  display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 7rem;
+  margin: 7rem 0;
   gap: 7rem;
   position: relative;
 
@@ -168,6 +168,23 @@ export const IconsSection = styled.section`
     top: 25%;
 
     @media (min-width: 800px) {
+      animation-name: toTheTop;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+    @media (max-width: 800px) {
+      top: 10%;
+      position: relative;
+
+    }
+  }
+
+  .react-native{
+    color: ${({theme}) => theme.Colors.blue};
+    position: absolute;
+    top: 25%;
+
+    @media (min-width: 800px) {
       animation-name: toTheBottom;
       animation-duration: 3s;
       animation-iteration-count: infinite;
@@ -208,6 +225,7 @@ export const CardSection = styled.section`
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  margin-top: 2rem;
 
   h2 {
      text-align: center;
@@ -220,8 +238,16 @@ export const CardSection = styled.section`
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    margin-top: 2rem;
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
   }
 
 `;
 
+export const ContactsSection = styled.section`
 
+
+`;
