@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <h3>
-        Development by Gustavo 2024{' '}
+        Development by Gustavo2024{' '}
         <span>
           <FaCopyright />
         </span>

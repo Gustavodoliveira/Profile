@@ -72,14 +72,14 @@ export const HeaderButtonContainer = styled.div`
   display: flex;
   gap: 2rem;
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 8.5%;
 
   @media (max-width: 800px) {
     display: flex;
     align-items: center;
     margin-top: -20rem;
-    margin-left: -13rem;
+    margin-left: -15rem;
     position: relative;
     flex-wrap: wrap;
     gap: 1rem;
@@ -150,6 +150,7 @@ export const HeaderButtonContainer = styled.div`
 export const HeaderImageAndCvContainer = styled.div`
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   gap: 5rem;
   position: absolute;
   top: 25%;
@@ -160,6 +161,8 @@ export const HeaderImageAndCvContainer = styled.div`
     margin-top: 34rem;
     align-items: center;
     position: relative;
+    left: 0;
+    right: 0;
   }
  
  .btn-cv{

@@ -21,14 +21,16 @@ import {
 } from 'react-icons/si';
 import { TbBrandReactNative } from 'react-icons/tb';
 import Contacts from '@/components/Contacts/Contacts';
-import { MdEmail } from 'react-icons/md';
-import { FaInstagram, FaTwitter } from 'react-icons/fa6';
 
 export default function Page() {
   return (
     <MainContainer>
+      <ContactsSection>
+        <Contacts />
+      </ContactsSection>
       <HardSkillContainer>
         <h2>Skills</h2>
+
         <IconsSection>
           <Icon icon={SiReact} title="React" Class="react" />
           <Icon icon={SiRedux} title="Redux" Class="redux" />
@@ -57,26 +59,6 @@ export default function Page() {
           <Card />
         </div>
       </CardSection>
-      <ContactsSection>
-        <Contacts
-          Icon={MdEmail}
-          href="/"
-          text="gustavod.oliveira@outlook.com"
-          title="E-mail"
-        />
-        <Contacts
-          Icon={FaInstagram}
-          href="/"
-          text="gustavod.oliveira@outlook.com"
-          title="E-mail"
-        />
-        <Contacts
-          Icon={FaTwitter}
-          href="/"
-          text="gustavod.oliveira@outlook.com"
-          title="E-mail"
-        />
-      </ContactsSection>
     </MainContainer>
   );
 }

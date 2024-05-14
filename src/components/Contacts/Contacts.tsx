@@ -1,23 +1,40 @@
 import React from 'react';
-import { ContactsContainer } from './styled';
-import { IconType } from 'react-icons';
-import Link from 'next/link';
+import {
+  ContactsContainer,
+  ContainerMediaSocialAndImage,
+  MediaSocialContainer,
+  MyApresentation,
+} from './styled';
+import { FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import img from '../../../public/images/frequency-wave-7776034_1280.jpg';
+import Image from 'next/image';
 
-interface ContactsProps {
-  Icon: IconType;
-  text: string;
-  Class?: string;
-  href: string;
-  title: string;
-}
-
-const Contacts = (props: ContactsProps) => {
+const Contacts = () => {
   return (
-    <ContactsContainer className={props.Class}>
-      <props.Icon />
-      <Link href={props.href} target="_blank">
-        {props.text}
-      </Link>
+    <ContactsContainer>
+      <ContainerMediaSocialAndImage>
+        <Image
+          src={img.src}
+          alt="gustavo de oliveira"
+          width={200}
+          height={200}
+          className="image_perfil"
+        />
+        <MediaSocialContainer>
+          <FaInstagram />
+          <FaLinkedinIn />
+          <FaTwitter />
+        </MediaSocialContainer>
+      </ContainerMediaSocialAndImage>
+
+      <MyApresentation>
+        <article>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex unde
+          asperiores quaerat, a eius, tempora ipsa placeat quos quasi
+          voluptates, explicabo tenetur voluptate ab molestias. Dolore
+          temporibus aperiam ullam quam.
+        </article>
+      </MyApresentation>
     </ContactsContainer>
   );
 };
