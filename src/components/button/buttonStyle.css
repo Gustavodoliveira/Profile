@@ -1,0 +1,42 @@
+.container_button{
+  display: flex;
+  gap: .5rem;
+  align-items: flex-end
+}
+
+.container_button_text{
+  transition: all .2s ease-in-out;
+}
+.container_button_text:hover{
+  color: #ffffff56;
+
+}
+
+
+.linkedin{
+  color: #0369A1;
+  transition: all .2s ease-in-out;
+}
+
+.linkedin:hover{
+  color: #036aa16c;
+
+}
+
+.github{
+  transition: all .2s ease-in-out;
+  color: #6B21A8
+}
+
+.github:hover{
+  color: #6b21a865
+}
+
+.curriculo{
+  color: #BE123C;
+  transition: all .2s ease-in-out;
+}
+
+.curriculo:hover{
+  color: #be123d86;
+}
