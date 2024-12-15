@@ -1,0 +1,33 @@
+.btn{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 170px;
+  height: 42px;
+  padding: 1.6rem;
+  border-radius: 2rem;
+  font-size: 1.4rem;
+  box-shadow: 2px 4px 4px black;
+}
+.btn_linkedin{
+  background-color: var(--btn-linkedin);
+  color: var(--btn-linkedin-hover);
+  transition: all .3s;
+}
+
+.btn_linkedin:hover{
+  background-color: var(--btn-linkedin-hover);
+  color: white;
+}
+
+.btn_github{
+  background-color: var(--btn-github);
+  color: var(--btn-github-hover);
+  transition: all .3s;
+}
+
+.btn_github:hover{
+  background-color: var(--btn-github-hover);
+  color: var(--btn-github);
+}
+
