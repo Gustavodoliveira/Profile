@@ -15,7 +15,7 @@ const Btn = ({ className, link, text, Icon, classIcon }: props) => {
   return (
     <a href={link} target="_blank" className={`btn ${className}`}>
       {Icon && <Icon className={`icon ${classIcon}`} />}
-      {text}
+      <p>{text}</p>
     </a>
   );
 };

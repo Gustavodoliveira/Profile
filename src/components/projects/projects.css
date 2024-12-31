@@ -1,0 +1,132 @@
+.project_container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 5rem 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../../../public//cadastro.jpg);
+  background-size: cover;
+  color: var(--background);
+  height: 300px;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 400px;
+  max-height: 400px;
+  position: relative;
+}
+
+.project_container:hover {
+  animation: BgChange .5s ease-out forwards;
+
+
+  & .project_specifications {
+    animation: fadeIn 2s ease-out forwards;
+  }
+
+  & .project_description {
+    animation: fadeIn 2s ease-out forwards;
+  }
+
+  & .project_icons {
+    animation: fadeIn 2s ease-out forwards;
+  }
+
+  & .project_links{
+    animation: fade 2s ease-out forwards;
+  }
+}
+
+
+
+.project_specifications{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  transition: all .3s ease-in-out;
+
+  & h4 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+
+}
+
+.project_icons{
+  display: flex;
+  margin: 1rem 0;
+  gap: 1rem;
+  justify-content: center;
+
+  transition: all .1s ease-in-out;
+}
+
+.project_description{
+  transition: all .1s ease-in-out;
+  
+  & p {
+    font-size: .6rem;
+    text-align: justify;
+    padding: .5rem;
+  }
+
+  & ul {
+    font-size: .6rem;
+    margin-left: 1rem;
+  }
+}
+
+.project_links{
+  display: flex;
+  gap: .5rem;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+
+}
+
+.project_btn{
+  border-radius: .5rem;
+  text-align: center;
+  width: 120px;
+  color: black;
+  background-color: #d2d6dc86;
+  padding: .5rem;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+} 
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+}
+}
+
+@keyframes BgChange {
+  0% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../../../public//cadastro.jpg);
+  }
+  100%{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.781)), url(../../../public//cadastro.jpg);
+  }
+}
+
+.icon_react{
+  color: var(--btn-linkedin);
+}
+
+.icon_springBoot{
+  color: #6CB52D;
+}

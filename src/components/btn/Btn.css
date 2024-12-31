@@ -31,3 +31,13 @@
   color: var(--btn-github);
 }
 
+/* point breaker smartphone for tablet*/
+@media (min-width: 700px) and (max-width: 900px ){
+  .btn{
+    width: 125px;
+
+    & p {
+      font-size: .7rem;
+    }
+  }
+}

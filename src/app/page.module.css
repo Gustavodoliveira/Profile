@@ -2,16 +2,15 @@
   display: grid;
   justify-content: center;
   margin: 20px;
+  position: relative;
 }
 
 .main_header {
   margin: 4rem auto;
-}
-
-.main_contacts{
-  display: flex;
-  gap: 2rem;
-  margin-top: 6rem;
+  & h2 {
+    margin-left: 2rem;
+    font-size: 1.4rem;
+  }
 }
 
 .image_center{
@@ -19,10 +18,91 @@
   justify-content: center;
 }
 
-/* point breaker para pc*/
-@media (min-width: 500px) {
-  .page{
-    grid-template-columns: 1fr 1fr;
+.main_contacts{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-left: 5rem;
+  
+  & div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
+}
+
+
+
+.main_project {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 5rem auto;
+
+  & h3 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* point breaker smartphone*/
+@media (min-width: 805px) {
+ 
+  .main_header {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+    gap: 10rem;
+
+    & h2 {
+      margin-top: 4rem;
+      margin-left: 1rem;
+      font-weight: 200;
+      font-size: 2.4rem;
+    }
+  }
+
+  .main_contacts {
+    margin: 4rem;
+    
+    & div {
+      flex-direction: row;
+      justify-content: center;
+      gap: 3rem;
+      margin-top: -14rem;
+      margin-left: 2rem;
+    }
+  }
+
+
+}
+
+/* point breaker smartphone for tablet*/
+@media (min-width: 700px) and (max-width: 804px )  {
+  .main_header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 2rem;
+    align-items: flex-start;
+    
+
+    & h2 {
+      margin-left: 2rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  .main_contacts {
+    justify-content: center;
+    margin-left: -1rem;
+  }
+
+
+
+ 
 }
 
